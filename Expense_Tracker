@@ -2,3 +2,5 @@ from tinydb import TinyDB, Query
 from datetime import datetime
 import streamlit as st
 
+db = TinyDB("expense_tracker.json")  # This creates a JSON database file in the current directory
+users_db = db.table("users")  # Create or access the 'users' table
